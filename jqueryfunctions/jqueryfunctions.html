@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Functions</title>
+        <script src="/home/necrotic/Desktop/JavaScript_Practice/jqueryfunctions/jqueryfunctions.js"></script>
+        <script src="/home/necrotic/Desktop/JavaScript_Practice/jqueryfunctions/jqueryfunctions.css"></script>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#clicker').click(function(){
+                alert("You clicka da button!");
+            })
+            $("#focusinput").focus(function(){
+                // $(this).after("<b>HEYA</b>");
+                // alert("Haha you canta type in da box");
+                // $(this).fadeout("fast");
+                 $( this ).next( "span" ).after("<b>HEYALOOKATME</b>").css( "display", "inline" ).fadeOut( 1000 );
+            })
+            $('#addclasser').click(function(){
+                $(this).addClass("addthisclass");
+            })
+            $("#valid")
+              .keyup(function() {
+                var value = $( this ).val();
+                $( "#valerchange" ).text( value );
+              })
+              .keyup();
+            $('#texter').click(function(){
+                $('#texter1').text("And now it's got different text!");
+            })
+            var title=$("#attrer button").attr("title");
+            $("#attrer").before(title);
+            $('#html').click(function(){
+                $("#htmltext").html("<span class='red'>Here's some HTML</span>");
+            })
+            $('#databutton1').click(function(){
+                var pizza=$('h1').data("pizza!","no pizza");
+                $("h1").text("pizza"+pizza);
+            })
+            $('#databutton2').click(function(){
+                pizza=$('h1').data("no pizza :(","pizza!");
+                $("h1").text("no pizza"+pizza);
+
+            })
+        });
+        </script>
+        <style>
+        .addthisclass{
+            color:red;
+            font-size: 300%;
+        }
+        .red{
+            color:red;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="clicker">
+                <p>Click the button to see a change!</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="focuser">
+                <p>Click the button to see what focus does</p>
+                <p><input type="text" id="focusinput"><span>As soon as you focus on the input field these words will disappear!</span></p>
+                <hr>
+            </div>
+            <div id="addclasser">
+                <p>Click the button to add a class that will blow up the text and turn it red</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="valer">
+                <p id="valerchange">Click the button to see what val does</p>
+                <button id="valer1">Click me!</button>
+                <input type="text" id="valid" value="Type in the box to change the value of this title!">
+                <hr>
+            </div>
+            <div id="texter">
+                <p id="texter1">Click the button to change the text shown</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id ="attrer">
+                <p>Attr can be used to select or add attributes, such as the title of the button shown above</p>
+                <button title="Button,button, who's got the button?">Click me!</button>
+                <hr>
+            </div>
+            <div id="html">
+                <p id="htmltext">Click the button to see html changes</p>
+                <button id="htmlbutton">Click me!</button>
+                <hr>
+            </div>
+            <div id="dataer">
+                <p>Click the button to see what data does</p>
+                <button id="databutton1">Click me to add pizza</button>
+                <button id="databutton2">Click me to eat pizza</button>
+                <h1> </h1>
+                <hr>
+            </div>
+            <div id="beforeer">
+                <p>Click the button to see some text added to the beginning</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="afterer">
+                <p>Click the button to see some text added to the end</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="appender">
+                <p>Click the button to see some appended text</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="shower">
+                <p>Click the button to see something shown</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="hider">
+                <p>Click the button to see something hidden</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="toggler">
+                <p>Click the button to see something toggled</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="fadeiner">
+                <p>Click the button to see something faded in</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="fadeouter">
+                <p>Click the button to see something faded out</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="slidedowner">
+                <p>Click the button to see something slide down</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="slideuper">
+                <p>Click the button to see something slide up</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+            <div id="slidetoggle">
+                <p>Click the button to see something slide toggle</p>
+                <button>Click me!</button>
+                <hr>
+            </div>
+
+
+    </body>
+</html>

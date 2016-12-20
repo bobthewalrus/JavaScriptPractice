@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Disappearing Kitties</title>
+        <link rel= "stylesheet" type="text/css" href="/home/necrotic/Desktop/JavaScript_Practice/Disappearingninja/disappearingninja.css"></script>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide();
+            })
+            $('button').click(function(){
+                $('img').show();
+            })
+        });
+
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1> jQuery- Disappearing Cats</h1>
+            <div class="imagebox">
+            <img id="kittie" src="/home/necrotic/Downloads/download.jpg" alt="Cute Cat">
+            </div>
+            <div class="imagebox">
+            <img id="kittie" src="/home/necrotic/Downloads/download.jpg" alt="Cute Cat">
+            </div>
+            <div class="imagebox">
+            <img id="kittie" src="/home/necrotic/Downloads/download.jpg" alt="Cute Cat">
+            </div>
+            <div class="imagebox">
+            <img id="kittie" src="/home/necrotic/Downloads/download.jpg" alt="Cute Cat">
+            </div>
+            <div class="imagebox">
+            <img id="kittie" src="/home/necrotic/Downloads/download.jpg" alt="Cute Cat">
+            </div>
+            <div class="imagebox">
+            <img id="kittie" src="/home/necrotic/Downloads/download.jpg" alt="Cute Cat">
+            </div>
+            <div class="imagebox">
+            <img id="kittie" src="/home/necrotic/Downloads/download.jpg" alt="Cute Cat">
+            </div>
+            <div class="imagebox">
+            <img id="kittie" src="/home/necrotic/Downloads/download.jpg" alt="Cute Cat">
+            </div>
+            <button>Restore</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+.imagebox{
+    display: inline-block;
+    margin: auto;
+    background-color: silver;
+    padding: 20px;
+}
+#wrapper{
+
+    margin: auto;
+}
+body{
+    padding-top: 200px;
+    width:1100px;
+    margin:auto;
+}

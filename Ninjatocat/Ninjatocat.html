@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja to Cat</title>
+        <link rel= "stylesheet" type="text/css" href="/home/necrotic/Desktop/JavaScript_Practice/Ninjatocat/Ninjatocat.css"></script>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            var SW1 = true;
+            $('#kittie1').click(function(){
+
+                SW1=!SW1;
+                if(SW1===false){
+                    $('#kittie1').attr("src","/home/necrotic/Downloads/img/ninja0.png");
+                }
+                if(SW1===true){
+                    $('#kittie1').attr("src","/home/necrotic/Downloads/img/cat0.png");
+                }
+            })
+            var SW2 = true;
+            $('#ninja2').click(function(){
+
+                SW2=!SW2;
+                if(SW2===false){
+                    $('#ninja2').attr("src","/home/necrotic/Downloads/img/ninja1.png");
+                }
+                if(SW2===true){
+                    $('#ninja2').attr("src","/home/necrotic/Downloads/img/cat1.png");
+                }
+            })
+            var SW3 = true;
+            $('#kittie3').click(function(){
+
+                SW3=!SW3;
+                if(SW3===false){
+                    $('#kittie3').attr("src","/home/necrotic/Downloads/img/ninja2.png");
+                }
+                if(SW3===true){
+                    $('#kittie3').attr("src","/home/necrotic/Downloads/img/cat2.png");
+                }
+            })
+            var SW4 = true;
+            $('#ninja4').click(function(){
+
+                SW4=!SW4;
+                if(SW4===false){
+                    $('#ninja4').attr("src","/home/necrotic/Downloads/img/ninja3.png");
+                }
+                if(SW4===true){
+                    $('#ninja4').attr("src","/home/necrotic/Downloads/img/cat3.png");
+                }
+            })
+            var SW5 = true;
+            $('#ninja5').click(function(){
+
+                SW5=!SW5;
+                if(SW5===false){
+                    $('#ninja5').attr("src","/home/necrotic/Downloads/img/ninja4.png");
+                }
+                if(SW5===true){
+                    $('#ninja5').attr("src","/home/necrotic/Downloads/img/cat4.png");
+                }
+            })
+        });
+
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1> jQuery- Ninja to Cat Puzzle</h1>
+            <div class="imagebox">
+                <img id="kittie1" src="/home/necrotic/Downloads/img/cat0.png" alt="Cute Cat" order='1'>
+                 <!-- <img class="ninja1" src="/home/necrotic/Downloads/img/ninja0.png" alt="Ninja" order='1'> -->
+            </div>
+            <div class="imagebox">
+                <!-- <img id="kittie2" src="/home/necrotic/Downloads/img/cat1.png" alt="Cute Cat" order='2'> -->
+                <img id="ninja2" src="/home/necrotic/Downloads/img/ninja1.png" alt="Ninja" order='2'>
+            </div>
+            <div class="imagebox">
+                <img id="kittie3" src="/home/necrotic/Downloads/img/cat2.png" alt="Cute Cat" order='3'>
+                <!-- <img class="ninja3" src="/home/necrotic/Downloads/img/ninja2.png" alt="Ninja" order='3'> -->
+            </div>
+            <div class="imagebox">
+                <!-- <img id="kittie4" src="/home/necrotic/Downloads/img/cat3.png" alt="Cute Cat" order='4'> -->
+                <img id="ninja4" src="/home/necrotic/Downloads/img/ninja3.png" alt="Ninja" order='4'>
+            </div>
+            <div class="imagebox">
+                <!-- <img id="kittie5" src="/home/necrotic/Downloads/img/cat4.png" alt="Cute Cat" order='5'> -->
+                <img id="ninja5" src="/home/necrotic/Downloads/img/ninja4.png" alt="Ninja" order='5'>
+            </div>
+
+        </div>
+    </body>
+</html>

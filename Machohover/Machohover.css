@@ -1,0 +1,14 @@
+img{
+    display: inline-block;
+    margin:auto;
+
+}
+.imagebox{
+    display: inline-block;
+    margin:auto;
+
+}
+.wrapper{
+    margin:auto;
+    width:20%;
+}

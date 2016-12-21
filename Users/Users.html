@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja to Cat</title>
+        <link rel= "stylesheet" type="text/css" href="/home/necrotic/Desktop/JavaScript_Practice/Ninjatocat/Ninjatocat.css"></script>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            var firstname="";
+            var lastname="";
+            var email="";
+            var phone="";
+            $(document).on('click','button',function(){
+                var firstname = document.getElementById('firstname').value;
+                var lastname = document.getElementById('lastname').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                console.log(firstname);
+                console.log(lastname);
+                console.log(email);
+                console.log(phone);
+                $("<tr><td>"+firstname+"</td><td>"+lastname+"</td><td>"+email+"</td><td>"+phone+"</td></tr>").appendTo($("#tabley"));
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <table id="tabley">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email Address</th>
+                        <th>Contact No.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <h1>Add User</h1>
+            <hr></hr>
+            <form><input id="firstname" type="text" name="First Name:" value="First Name">
+                <input id="lastname" type="text" name="Last Name:" value="Last Name">
+                <input id="email" type="text" name="Email Address" value="Email Address">
+                <input id="phone" type="text" name="Contact No.:" value="Phone #">
+            </form>
+            <button>Add User</button>
+        <div id="wrapper">
+    </body>
+</html>

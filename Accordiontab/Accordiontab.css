@@ -1,0 +1,19 @@
+#accordion-resizer{
+    width:700px;
+    height:400px;
+    padding:10px;
+}
+.photo {
+  width: 300px;
+  text-align: center;
+}
+.photo .ui-widget-header {
+  margin: 1em 0;
+}
+.map {
+  width: 350px;
+  height: 350px;
+}
+.ui-tooltip {
+  max-width: 350px;
+}

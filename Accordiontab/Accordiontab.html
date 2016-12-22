@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Cards</title>
+        <link rel= "stylesheet" type="text/css" href="/home/necrotic/Desktop/JavaScript_Practice/Accordiontab/Accordiontab.css"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(function(){
+                $( "#accordion" ).accordion({
+                  heightStyle: "fill"
+                });
+
+                $( "#accordion-resizer" ).resizable({
+                  minHeight: 140,
+                  minWidth: 200,
+                  resize: function() {
+                    $( "#accordion" ).accordion( "refresh" );
+                  }
+                });
+            });
+            $( function() {
+                $( "#tabs" ).tabs({
+                    event: "mouseover"
+            });
+      } );
+      $( function() {
+    $( document ).tooltip({
+      items: "img, [data-geo], [title]",
+      content: function() {
+        var element = $( this );
+        if ( element.is( "[data-geo]" ) ) {
+          var text = element.text();
+          return "<img class='map' alt='" + text +
+            "' src='http://maps.google.com/maps/api/staticmap?" +
+            "zoom=11&size=350x350&maptype=terrain&sensor=false&center=" +
+            text + "'>";
+        }
+        if ( element.is( "[title]" ) ) {
+          return element.attr( "title" );
+        }
+        if ( element.is( "img" ) ) {
+          return element.attr( "alt" );
+        }
+      }
+    });
+  } );
+    });
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="accordion-resizer" class="ui-widget-content">
+            <div id="accordion">
+                <h1>Introduction</h1>
+                <div>
+                    <p>"Its being directed and written by a genius name David Ward who - oh, Idont know - won the Academy Award at 23 for writing The Sting. And it wass pen and his vision that created the classic that we know today as MajorLeague.   Um ... but Im excited to get back ... to work. Um ... and not tocompletely discount what you just talked about ... It's just that if Iring up these ... these turds ... these little losers ... there's noreason to then bring them back into the fold, because I have real fame, andthey have nothing. Because ... look at what I'm dealing with, man. I'mdealing with fools and trolls. Because ... look at what I'man. I'm dealing with fools and trolls."</p>
+                </div>
+                <h1>Chapter One</h1>
+                <div>
+                    <p>"So ... you know ... within that is tremendous focus, and tremendousclarity, and tremendous peace. Yeah, I sat with two - hey, coincidence -F-18, Top Gun, radical fire, napalm dropping pilots in my movie theater"</p>
+                </div>
+                <h1>Chapter Thirty Three</h1>
+                <div>
+                    <p>"Yeah, but I can't use the word 'sober' because that's a term from 'thosepeople', and I have cleansed myself. How complicated can it be? Whatthey'there's also ... falling from it ... is the apple from The Giving Tree.There's my life. Deal with it. Oh, wait! Can't process it. Losers! WINNING!B'bye."</p>
+                </div>
+                <h1>Finale</h1>
+                <div>
+                    <p>"It's being directed and written by a genius name David Ward who - oh, Idon't know - won the Academy Award at 23 for writing The Sting. And it wasyour travels ... you're gonna need it ... badly... So ...."</p>
+                    </div>
+            </div>
+        </div>
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">Nunc tincidunt</a></li>
+            <li><a href="#tabs-2">Proin dolor</a></li>
+            <li><a href="#tabs-3">Aenean lacinia</a></li>
+          </ul>
+          <div id="tabs-1">
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+          </div>
+          <div id="tabs-2">
+            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+          </div>
+          <div id="tabs-3">
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+          </div>
+        </div>
+        <div class="ui-widget photo">
+  <div class="ui-widget-header ui-corner-all">
+    <h2>St. Stephen's Cathedral</h2>
+    <h3><a href="http://maps.google.com/maps?q=vienna,+austria&amp;z=11" data-geo="">Vienna, Austria</a></h3>
+  </div>
+  <a href="http://en.wikipedia.org/wiki/File:Wien_Stefansdom_DSC02656.JPG">
+    <img src="images/st-stephens.jpg" alt="St. Stephen&apos;s Cathedral" class="ui-corner-all">
+  </a>
+</div>
+
+<div class="ui-widget photo">
+  <div class="ui-widget-header ui-corner-all">
+    <h2>Tower Bridge</h2>
+    <h3><a href="http://maps.google.com/maps?q=london,+england&amp;z=11" data-geo="">London, England</a></h3>
+  </div>
+  <a href="http://en.wikipedia.org/wiki/File:Tower_bridge_London_Twilight_-_November_2006.jpg">
+    <img src="images/tower-bridge.jpg" alt="Tower Bridge" class="ui-corner-all">
+  </a>
+</div>
+
+<p>All images are part of <a href="http://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>
+and are licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" title="Creative Commons Attribution-ShareAlike 3.0">CC BY-SA 3.0</a> by the copyright holder.</p>
+        </div>
+    </body>
+</html>

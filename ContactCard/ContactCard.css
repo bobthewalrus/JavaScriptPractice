@@ -1,0 +1,15 @@
+#cardholder{
+    width:500px;
+    position:relative;left:1300px;
+}
+.card{
+    width:450px;
+    height:300px;
+    border: 4px double green;
+    margin: 20px;
+    border-radius: 30px;
+    padding:10px;
+}
+h4{
+    display:none;
+}

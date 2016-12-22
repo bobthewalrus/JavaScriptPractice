@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Cards</title>
+        <link rel= "stylesheet" type="text/css" href="/home/necrotic/Desktop/JavaScript_Practice/ContactCard/ContactCard.css"></script>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            var firstname="";
+            var lastname="";
+            var email="";
+            var phone="";
+            var description="";
+            var x = 1;
+
+        $(document).on('click','button',function(){
+            firstname=$('.firstname').val();
+            lastname=$('.lastname').val();
+            email=$('.email').val();
+            phone=$('.phone').val();
+            description=$('.description').val();
+            console.log(firstname);
+            console.log(lastname);
+            console.log(email);
+            console.log(phone);
+            console.log(description);
+
+            // function createCard(){
+                $("#cardholder").append("<hr><div class='card' id='card"+x+    "'><h1>"+firstname+"</h1><h1>"+lastname+"</h1><h3>"+email+"</h3><h3>"+phone+"</h3><h4>"+description+"</h4><p>Click to see description</p></div>")
+                // $("<hr><div class='card'><h1>"+firstname+"</h1><h1>"+lastname+"</h1><h3>"+email+"</h3><h3>"+phone+"</h3><h4>"+description+"</h4><p>Click to see description</p></div>").prependTo($("#cardholder"));
+            // }
+            // createCard();
+
+            $("#card"+x).click(function() {
+                console.log($('.card').attr("id"))
+                $(this).children().toggle()
+            })
+            x++;
+        })
+
+        });
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>Enter your information here:</h1>
+            <hr></hr>
+            <form><input class="firstname" type="text" name="First Name:" value="First Name">
+                <input class="lastname" type="text" name="Last Name:" value="Last Name">
+                <input class="email" type="text" name="Email Address" value="Email Address">
+                <input class="phone" type="text" name="Contact No.:" value="Phone #">
+                <input class="description" type="text" name="Description:" value="Description">
+            </form>
+            <button>Add User</button>
+            <div id="cardholder">
+            </div>
+        </div>
+    </body>
+</html>

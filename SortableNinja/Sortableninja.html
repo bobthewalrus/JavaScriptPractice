@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sortable Ninja Puzzle</title>
+        <link rel= "stylesheet" type="text/css" href="/home/necrotic/Desktop/JavaScript_Practice/Sortableninja/Sortableninja.css"></script>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $( "#ninjasort" ).sortable({
+                // snap;true;
+                // grid: [ 50, 20 ]
+
+            })
+        });
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <ul id="ninjasort">
+                <li>
+                    <div class="imageholder">
+                        <img id="image1" src="/home/necrotic/Downloads/sorting_images/sort1.png" alt="Top">
+                    </div>
+                </li>
+                <li>
+                    <div class="imageholder">
+                        <img id="image2" src="/home/necrotic/Downloads/sorting_images/sort2.png" alt="Second from top">
+                    </div>
+                </li>
+                <li>
+                    <div class="imageholder">
+                        <img id="image3" src="/home/necrotic/Downloads/sorting_images/sort3.png" alt="Middle">
+                    </div>
+                </li>
+                <li>
+                    <div class="imageholder">
+                        <img id="image4" src="/home/necrotic/Downloads/sorting_images/sort4.png" alt="Second from bottom">
+                    </div>
+                </li>
+                <li>
+                    <div class="imageholder">
+                        <img id="image5" src="/home/necrotic/Downloads/sorting_images/sort5.png" alt="Bottom">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
